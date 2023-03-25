@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Portal | Users</title>
+</head>
+
+<body>
+<nav>
+  <div>
+    <ul class='buttons'>
+      <li><a href="/users/create">Add user</a></li>
+      <li><a href="/users/export-data">Export Data</a></li>
+    </ul>
+  </div>
+</nav>
+<table>
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Email</th>
+    <th>Name</th>
+    <th>Status</th>
+    <th>Created at</th>
+    <th>Actions</th>
+  </tr>
+  </thead>
+  {{range .}}
+  <tr>
+    <td>{{.ID}}</td>
+    <td>{{.Email}}</td>
+    <td>{{.Name}}</td>
+    <td>{{.Status}}</td>
+    <td>{{.CreatedAt}}</td>
+    <td class='actions'>
+      <a href="/users/generate/{{.ID}}">Generate Document</a>
+    </td>
+  </tr>
+  {{end}}
+</table>
+<link href="/css/static/style.css" rel="stylesheet">
+</body>
+</html>

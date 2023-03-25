@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.buttons li {
+    cursor: pointer;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    background: rgb(45, 60, 77);
+}
+
+.buttons a {
+    display: block;
+    padding: 10px;
+    color: white;
+}
+
+.buttons li:hover {
+    border: 3px solid rgb(45, 60, 77);
+    background: transparent;
+}
+
+.buttons li:hover a {
+    color: #000;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+table, td {
+    border: 1px solid black;
+}
+
+th {
+    padding: 10px;
+    border: 1px solid white;
+    font-size: 18px;
+    background: rgb(45, 60, 77);
+    color: white;
+}
+
+.actions {
+    width: 20%;
+}
+
+.actions a {
+    display: inline-block;
+    margin: 5px auto;
+    width: 100%;
+    color: black;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    border-radius: 10px;
+    background: rgb(136, 167, 202);
+}
+
+.input-form label {
+    margin: 10px;
+    font-weight: 700;
+}
+
+.input-form input {
+    padding: 7px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.input-form input[type='submit'] {
+    padding: 10px 15px;
+    margin: 10px auto;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    background: rgb(45, 60, 77);
+    color: white;
+    border: none;
+}
+
+.input-form input[type='submit']:hover {
+    background: rgb(45, 60, 77);
+    background: linear-gradient(204deg, rgba(45, 60, 77, 1) 0%, rgba(81, 105, 131, 1) 100%);
+}
